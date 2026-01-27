@@ -1,0 +1,14 @@
+.navbar-brand img {
+    max-height: 60px;
+}
+.hero-section {
+    padding: 80px 0;
+}
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+}
