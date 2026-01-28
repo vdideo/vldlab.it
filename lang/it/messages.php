@@ -68,8 +68,8 @@ return [
         'skills_integration' => '<strong>System Integration:</strong> Collegamenti fluidi tra e-commerce, marketplace e gestionali di magazzino.',
 
         'beyond_title' => 'Oltre il codice',
-        'beyond_p1' => 'Credo fermamente nell\'importanza di coltivare interessi che alimentino la curiosità e l\'equilibrio personale. Sono un <strong>lettore costante</strong> e un <strong>viaggiatore entusiasta</strong>: esplorare nuovi luoghi e nuove pagine è per me il modo migliore per ampliare gli orizzonti e trovare nuovi spunti creativi anche nel lavoro.',
-        'beyond_p2' => 'Nel tempo libero, amo immergermi nelle sfide logiche e narrative dei <strong>videogiochi</strong>, una passione che mi accompagna da sempre. Infine, il fine settimana ha per me un solo colore: il <strong>nerazzurro dell\'Inter</strong>, una fede sportiva che seguo con dedizione e che rappresenta il mio lato più dinamico e appassionato.',
+        'beyond_p1' => 'Mi piace coltivare interessi che tengano viva la curiosità. Leggo molto e viaggio quando posso: scoprire nuovi posti e nuove storie è un modo per allargare lo sguardo e trovare ispirazioni che poi ritrovo anche nel lavoro.',
+        'beyond_p2' => 'Nel tempo libero mi dedico ai videogiochi, soprattutto quelli con una buona componente logica o narrativa, una passione che ho fin da ragazzo. E nel weekend c\'è sempre spazio per l\'Inter, che seguo con affetto da sempre.',
     ],
 
     // Services Page

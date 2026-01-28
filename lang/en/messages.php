@@ -68,8 +68,8 @@ return [
         'skills_integration' => '<strong>System Integration:</strong> Seamless connections between e-commerce, marketplaces and warehouse management systems.',
 
         'beyond_title' => 'Beyond the code',
-        'beyond_p1' => 'I firmly believe in nurturing interests that fuel curiosity and personal balance. I\'m a <strong>constant reader</strong> and an <strong>enthusiastic traveler</strong>: exploring new places and new pages is my best way to broaden horizons and find creative inspiration for my work.',
-        'beyond_p2' => 'In my free time, I love diving into the logical and narrative challenges of <strong>video games</strong>, a passion that has always been with me. Finally, weekends have only one color for me: the <strong>blue and black of Inter Milan</strong>, a sporting faith I follow with dedication and that represents my most dynamic and passionate side.',
+        'beyond_p1' => 'I enjoy cultivating interests that keep my curiosity alive. I read a lot and travel when I can: discovering new places and new stories is a way to broaden my horizons and find inspiration that I then incorporate into my work.',
+        'beyond_p2' => 'In my free time, I enjoy video games, especially those with a strong logic or narrative component, a passion I\'ve had since I was a kid. And on the weekends, there\'s always time for Inter Milan, a team I\'ve always followed fondly.',
     ],
 
     // Services Page
