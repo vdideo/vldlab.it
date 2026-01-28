@@ -6,7 +6,7 @@
             <img src="{{ asset("assets/img/portfolio/" . $item->image) }}" alt="{{ $item->getTitle() }}" class="img-fluid">
         </div>
         <div class="portfolio-content">
-            <span class="portfolio-year">{{ $item->year }}</span>
+{{--            <span class="portfolio-year">{{ $item->year }}</span>--}}
             <h3 class="portfolio-title">{{ $item->getTitle() }}</h3>
             <p class="portfolio-description">{!! $item->getDescription() !!}</p>
             @if($item->cta_url)
