@@ -141,11 +141,36 @@ return [
     // Cookie Banner
     'cookie_banner' => [
         'title' => 'Cookie Usage',
-        'message' => 'This website uses technical cookies necessary for proper functioning and Google Fonts to improve presentation. We do not use profiling or tracking cookies.',
-        'accept_button' => 'Accept',
-        'settings_button' => 'Settings',
+        'message' => 'This website uses cookies to ensure proper functioning and improve your browsing experience.',
+        'accept_all' => 'Accept all',
+        'reject_all' => 'Reject non-essential',
+        'settings_button' => 'Customize',
+        'save_preferences' => 'Save preferences',
+        'close' => 'Close',
         'privacy_link' => 'Privacy Policy',
         'cookie_link' => 'Cookie Policy',
+        'manage_cookies' => 'Manage Cookies',
+
+        // Cookie categories
+        'categories' => [
+            'necessary' => [
+                'title' => 'Technical Cookies (Necessary)',
+                'description' => 'These cookies are essential for the website to function. They cannot be disabled.',
+            ],
+            'analytics' => [
+                'title' => 'Analytics Cookies',
+                'description' => 'Help us understand how visitors interact with the website by collecting anonymous information.',
+            ],
+            'marketing' => [
+                'title' => 'Marketing Cookies',
+                'description' => 'Used to display relevant advertisements based on your interests.',
+            ],
+        ],
+
+        // Preferences modal
+        'preferences_title' => 'Cookie Preferences',
+        'preferences_intro' => 'Manage your cookie preferences. Technical cookies are always active as they are necessary for the website to function.',
+        'always_active' => 'Always active',
     ],
 
     // Privacy Policy Page

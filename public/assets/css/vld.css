@@ -12,3 +12,233 @@
     margin-right: 0.4rem;
     vertical-align: middle;
 }
+
+/* ============================================
+   Cookie Banner & Preferences Modal
+   ============================================ */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #252525 0%, #333333 100%);
+    color: #fff;
+    padding: 1.25rem 1rem;
+    z-index: 9999;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cookie-banner-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.cookie-banner-text h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #c29225;
+}
+
+.cookie-banner-text p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.cookie-banner-links {
+    font-size: 0.85rem;
+}
+
+.cookie-banner-links a {
+    color: #c29225;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.cookie-banner-links a:hover {
+    color: #d4a84a;
+    text-decoration: underline;
+}
+
+.cookie-banner-links .separator {
+    margin: 0 0.5rem;
+    color: #666;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.cookie-banner-actions .btn {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+.cookie-banner-actions .btn-primary {
+    background-color: #c29225;
+    border-color: #c29225;
+}
+
+.cookie-banner-actions .btn-primary:hover {
+    background-color: #a67c1e;
+    border-color: #a67c1e;
+}
+
+.cookie-banner-actions .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Cookie Preferences Modal */
+#cookie-preferences-modal .modal-header {
+    background: linear-gradient(135deg, #252525 0%, #333333 100%);
+    color: #fff;
+    border-bottom: 2px solid #c29225;
+}
+
+#cookie-preferences-modal .modal-title {
+    color: #c29225;
+}
+
+#cookie-preferences-modal .btn-close {
+    filter: invert(1);
+}
+
+#cookie-preferences-modal .modal-body {
+    padding: 1.5rem;
+}
+
+.cookie-category {
+    padding: 0.75rem 0;
+}
+
+.cookie-category-info {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.cookie-category-info h6 {
+    font-weight: 600;
+    color: #333;
+}
+
+.cookie-category-toggle .form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.cookie-category-toggle .form-check-input:checked {
+    background-color: #c29225;
+    border-color: #c29225;
+}
+
+.cookie-category-toggle .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(194, 146, 37, 0.25);
+}
+
+.cookie-category-links {
+    font-size: 0.9rem;
+}
+
+#cookie-preferences-modal .modal-footer {
+    border-top: 1px solid #dee2e6;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#cookie-preferences-modal .modal-footer .btn {
+    font-size: 0.9rem;
+}
+
+#cookie-preferences-modal .btn-primary {
+    background-color: #c29225;
+    border-color: #c29225;
+}
+
+#cookie-preferences-modal .btn-primary:hover {
+    background-color: #a67c1e;
+    border-color: #a67c1e;
+}
+
+#cookie-preferences-modal .btn-outline-primary {
+    color: #c29225;
+    border-color: #c29225;
+}
+
+#cookie-preferences-modal .btn-outline-primary:hover {
+    background-color: #c29225;
+    color: #fff;
+}
+
+/* Footer manage cookies link */
+.manage-cookies-link {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.manage-cookies-link:hover {
+    color: #c29225 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cookie-banner {
+        padding: 1rem;
+    }
+
+    .cookie-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-banner-actions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cookie-banner-actions .btn {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .cookie-category {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .cookie-category-info {
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #cookie-preferences-modal .modal-footer {
+        justify-content: center;
+    }
+
+    #cookie-preferences-modal .modal-footer .btn {
+        flex: 1;
+        min-width: 100px;
+    }
+}

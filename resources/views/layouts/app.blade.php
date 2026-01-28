@@ -128,6 +128,7 @@
                     <li><a href="{{ route('contacts', app()->getLocale()) }}" class="text-white text-decoration-none">{{ __('messages.menu.contacts') }}</a></li>
                     <li><a href="{{ route('privacy-policy', app()->getLocale()) }}" class="text-white text-decoration-none">{{ __('messages.footer.privacy_policy') }}</a></li>
                     <li><a href="{{ route('cookie-policy', app()->getLocale()) }}" class="text-white text-decoration-none">{{ __('messages.footer.cookie_policy') }}</a></li>
+                    <li><a href="#" class="text-white text-decoration-none manage-cookies-link">{{ __('messages.cookie_banner.manage_cookies') }}</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-3">
@@ -151,8 +152,12 @@
     </div>
 </footer>
 
+{{-- Cookie Banner --}}
+<x-cookie-banner />
+
 <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/cookie-consent.js') }}"></script>
 
 @stack('scripts')
 
