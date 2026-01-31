@@ -46,6 +46,14 @@
     <meta name="twitter:description" content="@hasSection('meta_description')@yield('meta_description')@else{{ $seoDescription }}@endif">
     <meta name="twitter:image" content="@hasSection('og_image')@yield('og_image')@else{{ $ogImage }}@endif">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W6CLV3N2');</script>
+    <!-- End Google Tag Manager -->
+
     {{-- Favicon --}}
     <link rel="icon" type="image/png" href="{{ asset('assets/favicon/favicon-96x96.png') }}" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="{{ asset('assets/favicon/favicon.svg') }}">
@@ -63,6 +71,10 @@
     @stack('styles')
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6CLV3N2"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
