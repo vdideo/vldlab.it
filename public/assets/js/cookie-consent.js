@@ -73,19 +73,22 @@
     }
 
     /**
-     * Enable analytics scripts (placeholder for future implementation)
+     * Enable analytics scripts - loads Google Tag Manager
      */
     function enableAnalytics() {
-        // Example: Load Google Analytics
-        // This is where you would initialize GA4 or other analytics
-        // window.dataLayer = window.dataLayer || [];
-        // function gtag(){dataLayer.push(arguments);}
-        // gtag('js', new Date());
-        // gtag('config', 'G-XXXXXXXXXX');
+        if (window._gtmLoaded) return;
+        window._gtmLoaded = true;
+
+        // Load Google Tag Manager
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W6CLV3N2');
 
         document.querySelectorAll('script[data-cookie-type="analytics"]').forEach(function(script) {
             if (script.dataset.src) {
-                const newScript = document.createElement('script');
+                var newScript = document.createElement('script');
                 newScript.src = script.dataset.src;
                 newScript.async = true;
                 document.head.appendChild(newScript);
@@ -94,11 +97,21 @@
     }
 
     /**
-     * Disable analytics
+     * Disable analytics - remove GA cookies
      */
     function disableAnalytics() {
-        // Remove or disable analytics cookies
-        // Note: Some cookies may need to be removed server-side
+        var hostname = window.location.hostname;
+        var domainParts = hostname.split('.');
+        var rootDomain = domainParts.slice(-2).join('.');
+
+        document.cookie.split(';').forEach(function(cookie) {
+            var name = cookie.split('=')[0].trim();
+            if (name.startsWith('_ga') || name.startsWith('_gid')) {
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + rootDomain;
+                document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + hostname;
+            }
+        });
     }
 
     /**
