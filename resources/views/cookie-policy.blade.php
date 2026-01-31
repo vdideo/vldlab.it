@@ -40,6 +40,17 @@
                                 <li><strong>{{ __('messages.cookies.technical_consent') }}</strong></li>
                             </ul>
                         </div>
+
+                        <!-- Cookie Analitici -->
+                        <div class="bg-light p-4 rounded mb-3">
+                            <h3 class="h5 mb-3"><i class="bi bi-graph-up text-primary me-2"></i>{{ __('messages.cookies.analytics_cookie_title') }}</h3>
+                            <p>{{ __('messages.cookies.analytics_cookie_content') }}</p>
+                            <ul class="mb-0">
+                                <li><strong>{{ __('messages.cookies.analytics_cookie_purpose') }}</strong></li>
+                                <li><strong>{{ __('messages.cookies.analytics_cookie_duration') }}</strong></li>
+                                <li><strong>{{ __('messages.cookies.analytics_cookie_consent') }}</strong></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- 3. Risorse di Terze Parti -->
@@ -60,6 +71,36 @@
                                 <small><i class="bi bi-info-circle me-2"></i>{{ __('messages.cookies.google_fonts_note') }}</small>
                             </div>
                         </div>
+
+                        <!-- Google Tag Manager -->
+                        <div class="border-start border-primary border-4 ps-3 mb-3">
+                            <h3 class="h5 mb-3">{{ __('messages.cookies.google_tag_manager_title') }}</h3>
+                            <p>{{ __('messages.cookies.google_tag_manager_content') }}</p>
+                            <ul class="mb-2">
+                                <li>{{ __('messages.cookies.google_tag_manager_provider') }}</li>
+                                <li>{{ __('messages.cookies.google_tag_manager_purpose') }}</li>
+                                <li>{!! __('messages.cookies.google_tag_manager_privacy') !!}</li>
+                            </ul>
+                            <div class="alert alert-info mb-0">
+                                <small><i class="bi bi-info-circle me-2"></i>{{ __('messages.cookies.google_tag_manager_note') }}</small>
+                            </div>
+                        </div>
+
+                        <!-- Google Analytics -->
+                        <div class="border-start border-primary border-4 ps-3 mb-3">
+                            <h3 class="h5 mb-3">{{ __('messages.cookies.google_analytics_title') }}</h3>
+                            <p>{{ __('messages.cookies.google_analytics_content') }}</p>
+                            <ul class="mb-2">
+                                <li>{{ __('messages.cookies.google_analytics_provider') }}</li>
+                                <li>{{ __('messages.cookies.google_analytics_purpose') }}</li>
+                                <li>{!! __('messages.cookies.google_analytics_privacy') !!}</li>
+                                <li>{{ __('messages.cookies.google_analytics_cookies') }}</li>
+                                <li>{!! __('messages.cookies.google_analytics_opt_out') !!}</li>
+                            </ul>
+                            <div class="alert alert-info mb-0">
+                                <small><i class="bi bi-info-circle me-2"></i>{{ __('messages.cookies.google_analytics_note') }}</small>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 4. Cookie di Profilazione -->
@@ -73,11 +114,8 @@
 
                     <!-- 5. Cookie Analitici -->
                     <div class="mb-5">
-                        <h2 class="h4 mb-3">{{ __('messages.cookies.no_analytics_title') }}</h2>
-                        <div class="alert alert-success">
-                            <i class="bi bi-check-circle-fill me-2"></i>
-                            {!! __('messages.cookies.no_analytics_content') !!}
-                        </div>
+                        <h2 class="h4 mb-3">{{ __('messages.cookies.analytics_title') }}</h2>
+                        <p>{!! __('messages.cookies.analytics_content') !!}</p>
                     </div>
 
                     <!-- 6. Gestione dei Cookie -->

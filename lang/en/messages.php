@@ -202,13 +202,14 @@ return [
             'To respond to requests for information and quotes sent through the contact form;',
             'To manage communications with users;',
             'To ensure the proper functioning of the website;',
+            'To anonymously and aggregately analyze website usage to improve its functionality and content;',
             'To comply with legal obligations.',
         ],
 
         'legal_basis_title' => '4. Legal Basis of Processing',
         'legal_basis_content' => 'The processing of personal data is based on:',
         'legal_basis_list' => [
-            '<strong>Consent of the data subject</strong> (art. 6, par. 1, lett. a) GDPR) for sending requests through the contact form;',
+            '<strong>Consent of the data subject</strong> (art. 6, par. 1, lett. a) GDPR) for sending requests through the contact form and for the installation of analytics cookies;',
             '<strong>Legitimate interest of the Data Controller</strong> (art. 6, par. 1, lett. f) GDPR) for website management and analysis of navigation data.',
         ],
 
@@ -216,7 +217,8 @@ return [
         'retention_content' => 'Personal data will be kept for the time strictly necessary to achieve the purposes for which it was collected:',
         'retention_list' => [
             'Data provided through the contact form will be kept for the time necessary to manage the request and for subsequent legal obligations;',
-            'Navigation data will be kept for the time strictly necessary for the operation of the website.',
+            'Navigation data will be kept for the time strictly necessary for the operation of the website;',
+            'Data collected through Google Analytics will be kept for a maximum period of 26 months.',
         ],
 
         'rights_title' => '6. Rights of the Data Subject',
@@ -245,15 +247,17 @@ return [
         'security_content' => 'The Data Controller processes user data by adopting appropriate security measures to prevent unauthorized access, disclosure, modification or destruction of personal data.',
 
         'cookies_title' => '9. Cookies and Similar Technologies',
-        'cookies_content' => 'The website uses only technical cookies necessary for the operation of the website itself. No profiling or third-party cookies are used for marketing purposes. The only external resources loaded are:',
+        'cookies_content' => 'The website uses technical cookies necessary for its operation and third-party analytics cookies (Google Analytics) to analyze traffic in anonymous and aggregated form. Analytics cookies are only activated with the user\'s prior consent. The external resources loaded are:',
         'cookies_list' => [
             '<strong>Google Fonts:</strong> Used for loading fonts. Google may collect anonymous statistical data on font usage. For more information: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">privacy.google.com</a>',
+            '<strong>Google Tag Manager:</strong> Used for centralized management of website tags. Does not install its own cookies. For more information: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">privacy.google.com</a>',
+            '<strong>Google Analytics:</strong> Used to collect anonymous statistics on website usage. Only activated with the user\'s prior consent. Cookies installed: _ga, _ga_* (duration: up to 2 years). For more information: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">privacy.google.com</a>',
         ],
 
         'changes_title' => '10. Changes to the Policy',
         'changes_content' => 'The Data Controller reserves the right to modify or update, in whole or in part, this policy. Changes will be published on the website and will be effective from the date of publication.',
 
-        'last_update' => 'Last updated: January 26, 2026',
+        'last_update' => 'Last updated: January 31, 2026',
     ],
 
     // Cookie Policy Page
@@ -267,13 +271,19 @@ return [
         'what_are_content' => 'Cookies are small text files that visited websites send to the user\'s device (computer, tablet, smartphone), where they are stored and then retransmitted to the same websites on the next visit. Cookies are used for different purposes, have different characteristics and can be used both by the owner of the website being visited and by third parties.',
 
         'types_title' => '2. Types of Cookies Used',
-        'types_intro' => 'The website vldlab.it uses only the following types of cookies:',
+        'types_intro' => 'The website vldlab.it uses the following types of cookies:',
 
         'technical_title' => 'Technical Cookies',
         'technical_content' => 'These are cookies necessary for the proper functioning of the website and to allow navigation. These cookies do not collect personal information that can be used for marketing purposes and do not track user navigation. The website uses session cookies to manage the language selected by the user.',
         'technical_purpose' => 'Purpose: To ensure the proper functioning of the website and store navigation preferences (e.g., selected language).',
         'technical_duration' => 'Duration: Session cookies are deleted when the browser is closed.',
         'technical_consent' => 'Legal basis: Do not require user consent (Italian Data Protection Authority Order No. 229 of May 8, 2014).',
+
+        'analytics_cookie_title' => 'Analytics Cookies',
+        'analytics_cookie_content' => 'These cookies are used to collect anonymous and aggregated information about how visitors use the website. They help us understand how visitors interact with the site, which pages are visited most frequently, and if users receive error messages from certain pages.',
+        'analytics_cookie_purpose' => 'Purpose: To analyze website traffic and improve the browsing experience based on collected data.',
+        'analytics_cookie_duration' => 'Duration: Up to 26 months from the date of installation.',
+        'analytics_cookie_consent' => 'Legal basis: User consent (art. 6, par. 1, lett. a) GDPR).',
 
         'third_party_title' => '3. Third-Party Resources',
         'third_party_intro' => 'The website uses the following external resources that may install cookies:',
@@ -285,11 +295,27 @@ return [
         'google_fonts_privacy' => 'Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">policies.google.com/privacy</a>',
         'google_fonts_note' => 'Note: Google Fonts is a service provided by Google LLC. For information on how Google handles user data, please consult Google\'s privacy policy.',
 
+        'google_tag_manager_title' => 'Google Tag Manager',
+        'google_tag_manager_content' => 'Google Tag Manager is a tag management service provided by Google LLC. It allows managing website tags through an interface. Google Tag Manager does not install cookies itself but manages the activation of other tags that may install them.',
+        'google_tag_manager_provider' => 'Provider: Google LLC',
+        'google_tag_manager_purpose' => 'Purpose: Centralized management of website tags and scripts.',
+        'google_tag_manager_privacy' => 'Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">policies.google.com/privacy</a>',
+        'google_tag_manager_note' => 'Note: Google Tag Manager does not use its own cookies but manages the activation of third-party services that may use them.',
+
+        'google_analytics_title' => 'Google Analytics',
+        'google_analytics_content' => 'The website uses Google Analytics, a web analytics service provided by Google LLC. Google Analytics uses cookies to collect and analyze statistical information about how visitors use the website. The generated data is used to compile reports on website activity.',
+        'google_analytics_provider' => 'Provider: Google LLC',
+        'google_analytics_purpose' => 'Purpose: Statistical analysis of website usage in anonymous and aggregated form.',
+        'google_analytics_privacy' => 'Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-primary">policies.google.com/privacy</a>',
+        'google_analytics_cookies' => 'Cookies installed: _ga (duration: 2 years), _ga_* (duration: 2 years) - used to distinguish users.',
+        'google_analytics_opt_out' => 'Opt-out: You can disable Google Analytics by installing the browser add-on: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" class="text-primary">tools.google.com/dlpage/gaoptout</a>',
+        'google_analytics_note' => 'Note: Google Analytics data is collected in anonymous and aggregated form. Users\' IP addresses are anonymized. For more information, consult Google\'s privacy policy.',
+
         'no_profiling_title' => '4. Profiling Cookies',
         'no_profiling_content' => 'The website <strong>DOES NOT use profiling cookies</strong> and <strong>DOES NOT use third-party cookies for marketing or advertising purposes</strong>. No data is collected to create user profiles or to send targeted advertising messages.',
 
-        'no_analytics_title' => '5. Analytics Cookies',
-        'no_analytics_content' => 'The website <strong>DOES NOT use analytics tools</strong> such as Google Analytics, Facebook Pixel or other tracking services to collect statistics on website usage.',
+        'analytics_title' => '5. Analytics Cookies',
+        'analytics_content' => 'The website uses <strong>Google Analytics</strong> to collect anonymous statistics on website usage. Analytics cookies are only activated with the user\'s prior consent, which can be expressed through the cookie banner displayed on the first visit to the site. The user can change their preferences at any time through the "Manage Cookies" button in the website footer.',
 
         'management_title' => '6. Cookie Management',
         'management_content' => 'Users can manage cookie preferences directly within their browser and prevent third parties from installing them. Through browser preferences, it is also possible to delete previously installed cookies.',
@@ -308,7 +334,7 @@ return [
         'disable_warning_content' => 'Total or partial disabling of technical cookies may compromise the optimal use of the website. Disabling third-party cookies does not affect website navigation in any way.',
 
         'consent_title' => '7. Consent to Cookie Use',
-        'consent_content' => 'By continuing to browse the website, the user accepts the use of technical cookies necessary for the operation of the website itself. No explicit consent is required as the website does not use profiling or tracking cookies.',
+        'consent_content' => 'The website uses a banner to collect consent for non-technical cookies. Technical cookies necessary for the website operation do not require consent. Analytics cookies (Google Analytics) are only installed after the user has given their consent through the banner. The user can change their preferences at any time through the "Manage Cookies" button in the website footer.',
 
         'data_controller_title' => '8. Data Controller',
         'data_controller_content' => 'The Data Controller for data collected through cookies is:',
@@ -327,6 +353,6 @@ return [
             '<strong>All About Cookies:</strong> <a href="https://www.allaboutcookies.org/" target="_blank" class="text-primary">www.allaboutcookies.org</a>',
         ],
 
-        'last_update' => 'Last updated: January 26, 2026',
+        'last_update' => 'Last updated: January 31, 2026',
     ],
 ];
