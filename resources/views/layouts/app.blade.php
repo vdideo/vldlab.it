@@ -145,6 +145,14 @@
                     Num. REA: CH - 425495
                 </p>
                 <p class="small mb-0">Via Giovanni Calabrò, 13/A<br>66034 Lanciano (CH) - Italy</p>
+                <div class="mt-3">
+                    <a href="https://www.linkedin.com/in/vincenzo-luca-di-deo-48470524/" target="_blank" rel="noopener noreferrer" class="text-white me-3" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                    <a href="https://github.com/vdideo" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="GitHub">
+                        <i class="bi bi-github fs-5"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <hr class="border-secondary">

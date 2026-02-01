@@ -122,6 +122,8 @@ return [
         'hours_days' => 'Lunedì - Venerdì',
         'address' => 'Indirizzo',
         'where_we_are' => 'Dove Siamo',
+        'linkedin_cta' => 'Visita il mio profilo',
+        'github_cta' => 'Vedi i miei progetti',
 
         'cta_title' => 'Pronto a iniziare?',
         'cta_subtitle' => 'Contattami per una consulenza gratuita sul tuo progetto',

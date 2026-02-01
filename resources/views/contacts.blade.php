@@ -68,6 +68,28 @@
                                 <p class="mb-0">Via Giovanni Calabrò, 13/A<br>66034 Lanciano (CH) - Italy</p>
                             </div>
                         </div>
+
+                        {{-- LinkedIn --}}
+                        <div class="col-md-6">
+                            <div class="contact-card h-100">
+                                <div class="contact-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/vincenzo-luca-di-deo-48470524/" target="_blank" rel="noopener noreferrer" class="contact-link">{{ __('messages.contacts.linkedin_cta') }}</a>
+                            </div>
+                        </div>
+
+                        {{-- GitHub --}}
+                        <div class="col-md-6">
+                            <div class="contact-card h-100">
+                                <div class="contact-icon">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/vdideo" target="_blank" rel="noopener noreferrer" class="contact-link">{{ __('messages.contacts.github_cta') }}</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
