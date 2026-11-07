@@ -6,7 +6,7 @@ php artisan down
 # Pull delle ultime modifiche dal repository
 git pull origin main
 
-composer install
+composer install --no-dev --optimize-autoloader --no-interaction
 
 npm install
 npm run build
