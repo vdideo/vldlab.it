@@ -1,22 +1,24 @@
 #!/bin/bash
 
+PHP=/usr/bin/php8.4
+
 # metto l'applicazione in modalità manutenzione
-php artisan down
+"$PHP" artisan down
 
 # Pull delle ultime modifiche dal repository
 git pull origin main
 
-composer install --no-dev --optimize-autoloader --no-interaction
+"$PHP" "$(command -v composer)" install --no-dev --optimize-autoloader --no-interaction
 
 npm install
 npm run build
 
 # tolgo la modalità manutenzione
-php artisan up
+"$PHP" artisan up
 
 # pulizia cache
-php artisan cache:clear
+"$PHP" artisan cache:clear
 
 # metto in cache le config, le route e le view
-php artisan optimize:clear
-php artisan optimize
+"$PHP" artisan optimize:clear
+"$PHP" artisan optimize
