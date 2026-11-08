@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-VLD Lab website - a Laravel 12 bilingual (Italian/English) web application for a technology consulting company.
+VLD Lab website - a Laravel 13 (PHP 8.4) bilingual (Italian/English) web application for a technology consulting company.
 
 ## Common Commands
 
